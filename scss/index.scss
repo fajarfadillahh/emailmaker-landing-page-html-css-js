@@ -267,3 +267,53 @@ img {
     width: 120px;
   }
 }
+
+// ===== FEATURES SECTION =====
+.features {
+  &__group {
+    gap: 12rem;
+  }
+
+  &__content {
+    display: grid;
+    gap: 3rem;
+
+    &-data,
+    &-img {
+      justify-self: center;
+    }
+
+    &-list {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: $margin-2;
+    }
+
+    &-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      color: $grey-color;
+    }
+
+    &-icon {
+      width: 16px;
+      height: 16px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.2rem;
+      background-color: $purple-color;
+      border-radius: 50%;
+      font-size: 1rem;
+      color: $white-color;
+    }
+
+    &-button {
+      background-color: $white-color;
+      border: 2px solid $purple-color;
+      color: $purple-color;
+    }
+  }
+}
