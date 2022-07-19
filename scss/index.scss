@@ -494,3 +494,56 @@ img {
     }
   }
 }
+
+// ===== ABOUT SECTION =====
+.about {
+  &__bg {
+    padding: 5rem 0;
+    background-color: $purple-color;
+  }
+
+  &__container {
+    gap: 4rem;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: $font-semibold;
+    color: $white-color;
+    line-height: $leading-text;
+  }
+
+  &__data {
+    display: grid;
+    gap: 2rem;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    text-align: center;
+
+    &-number {
+      font-size: 48px;
+      font-weight: $font-semibold;
+      color: $white-color;
+      line-height: 100%;
+      margin-bottom: 6px;
+    }
+
+    &-text {
+      font-size: 15px;
+      font-weight: $font-reguler;
+      color: $white-color;
+    }
+  }
+
+  &__button {
+    background-color: $white-color;
+    color: $purple-color;
+  }
+}
