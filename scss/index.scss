@@ -827,3 +827,51 @@ img {
     }
   }
 }
+
+// width 1120px
+@media screen and (min-width: 1120px) {
+  .container {
+    margin: 0 auto;
+  }
+
+  .header__list {
+    gap: 2rem;
+  }
+
+  .home {
+    &__data {
+      width: 600px;
+    }
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__img {
+      width: 900px;
+    }
+  }
+
+  .partner__img {
+    width: 150px;
+  }
+
+  .features {
+    &__content-data {
+      justify-self: left;
+    }
+
+    &__content-title,
+    &__content-text {
+      width: 450px;
+    }
+  }
+
+  .about__title {
+    font-size: 28px;
+  }
+
+  .footer__content {
+    justify-self: center;
+  }
+}
