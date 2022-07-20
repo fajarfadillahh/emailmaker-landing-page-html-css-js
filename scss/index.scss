@@ -760,3 +760,70 @@ img {
     }
   }
 }
+
+// width 968px
+@media screen and (min-width: 968px) {
+  .section-title {
+    font-size: 36px;
+  }
+
+  .home {
+    &__data {
+      width: 550px;
+    }
+
+    &__title {
+      font-size: 42px;
+    }
+
+    &__img {
+      width: 750px;
+    }
+  }
+
+  .partner__data,
+  .steps__data,
+  .testimonial__data {
+    width: 550px;
+  }
+
+  .features {
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+
+      &-data,
+      &-img {
+        width: auto;
+      }
+    }
+
+    &__content:nth-child(2) .features__content-data {
+      order: 2;
+    }
+  }
+
+  .about {
+    &__bg {
+      padding: 7rem 0;
+    }
+
+    &__container {
+      grid-template-columns: 1fr max-content;
+      align-items: center;
+    }
+
+    &__group {
+      gap: 3rem;
+    }
+
+    &__title,
+    &__data {
+      width: auto;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+  }
+}
