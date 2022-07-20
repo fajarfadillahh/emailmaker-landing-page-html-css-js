@@ -687,3 +687,47 @@ img {
     width: 400px;
   }
 }
+
+// width 640px
+@media screen and (min-width: 640px) {
+  .section-title {
+    font-size: 32px;
+  }
+
+  .home {
+    &__data {
+      width: 500px;
+    }
+
+    &__img {
+      width: 500px;
+    }
+
+    &__form {
+      width: 450px;
+      flex-direction: row;
+      margin: 0 auto;
+
+      &-input {
+        text-align: left;
+      }
+    }
+  }
+
+  .partner__data,
+  .features__content-data,
+  .steps__data,
+  .testimonial__data,
+  .about__title,
+  .about__data {
+    width: 500px;
+  }
+
+  .features__content-button {
+    display: inline-flex;
+  }
+
+  .features__content-img {
+    width: 500px;
+  }
+}
