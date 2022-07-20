@@ -669,3 +669,31 @@ img {
     padding-top: 2rem;
   }
 }
+
+// ===== SCROLLUP SECTION =====
+.scrollup {
+  position: fixed;
+  bottom: -100%;
+  right: 1.5rem;
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba($color: #6d23ff, $alpha: 0.8);
+  border-radius: 8px;
+  font-size: 1.5rem;
+  color: $white-color;
+  z-index: $z-tooltip;
+  transition: $transition-400;
+
+  &:hover {
+    background-color: rgba($color: #6d23ff, $alpha: 1);
+  }
+
+  // scollup action
+  &.scroll-action {
+    bottom: 3rem;
+  }
+}
